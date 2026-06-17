@@ -10,15 +10,14 @@ typedef struct node {
 
 void binary_conversion(int num) {
     node *current_ptr = NULL;
-    int num_store = num;
 
     while (true) {
-        if (num_store == 0) {
+        if (num == 0) {
             break;
         }
 
-        int remainder = num_store % 2;
-        num_store /= 2;
+        int remainder = num % 2;
+        num /= 2;
 
         node *new_node = malloc(sizeof(node));
         new_node->value = remainder;

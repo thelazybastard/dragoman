@@ -1,6 +1,6 @@
 #ifndef HEXADECIMAL_H
 #define HEXADECIMAL_H
 
-int hexadecimal_conversion(int num);
+void hexadecimal_conversion(int num);
 
 #endif
