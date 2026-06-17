@@ -23,6 +23,7 @@ void binary_conversion(int num) {
         node *new_node = malloc(sizeof(node));
         new_node->value = remainder;
         new_node->next = current_ptr;
+        
         current_ptr = new_node;   
     }
 
