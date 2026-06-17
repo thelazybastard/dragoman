@@ -24,6 +24,7 @@ int main(void) {
             break;
         case 'o':
             octal_conversion(user_num);
+            break;
         default:
             puts("Invalid argument. Try b for binary, h for hexadecimal, and o for octal, conversion");
             return EXIT_FAILURE;
