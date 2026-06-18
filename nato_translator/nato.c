@@ -13,20 +13,25 @@ char *nato[26] = {
 
 
 int main(int argc, char *argv[]) {
-    if (argc != 2) {
+    int char_num = 0;
+
+    if (argc < 2) {
         puts("Usage: ./nato word word2 word3");
         return EXIT_FAILURE;
     }
 
-    for (int i = 0, len = strlen(argv[1]); i < len; i++) {
-        for (int j = 0; j < 25; j++) {
-            if (toupper(argv[1][i]) == nato[j][0]) {
-                printf("%s", nato[j]);
-                break;
+    for (int h = 1; h < argc; h++) {
+        for (int i = 0, len = strlen(argv[h]); i < len; i++) {
+            for (int j = 0; j < 25; j++) {
+                if (toupper(argv[h][i]) == nato[j][0]) {
+                    printf("%s", nato[j]);
+                    break;
+                }
             }
         }
+        printf(" ");
     }
-
+    
     printf("\n");
 
     return EXIT_SUCCESS;
