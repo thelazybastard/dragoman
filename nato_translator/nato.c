@@ -13,8 +13,6 @@ char *nato[26] = {
 
 
 int main(int argc, char *argv[]) {
-    int char_num = 0;
-
     if (argc < 2) {
         puts("Usage: ./nato word word2 word3");
         return EXIT_FAILURE;
